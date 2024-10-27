@@ -1,0 +1,41 @@
+
+/* 当屏幕宽度小于或等于768px时，应用移动端样式 */
+@media (max-width: 768px) {
+#player {
+position: relative;
+width: 100%;
+height: 450px;
+object-fit: cover;
+}
+}
+
+.loader {
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 16px;
+}
+#switch {
+display: none;
+}
+#switch, #next1, #videoSource {
+background: #d3eafd;
+line-height: 40px;
+text-align: center;
+width: 130px; 
+border: none;
+border-radius: 6px;
+font-weight: bold;
+border: 1px solid #ccc;
+margin: 3px;
+}
+#videoSource {
+appearance: none; 
+-webkit-appearance: none;
+-moz-appearance: none;
+background: #d3eafd;
+background-repeat: no-repeat;
+background-position: right 10px center;
+}
